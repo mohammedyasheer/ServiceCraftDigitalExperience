@@ -1,0 +1,28 @@
+<template>
+    <lightning-modal-header label="Create Case"></lightning-modal-header>
+    <lightning-modal-body>
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="12" padding="around-small">
+                <lightning-record-edit-form object-api-name={objApiName} record-type-id={recordTypeId} onload={handelLoad} onsubmit={handleSubmit}>
+                    <lightning-layout multiple-rows="true">
+                        <lightning-layout-item size="12" padding="around-small">
+                            <lightning-input-field field-name="Subject"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6" padding="around-small">    
+                            <lightning-input-field padding="around-small" field-name="Region__c"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="6" padding="around-small">
+                            <lightning-input-field padding="around-small" field-name="Language__c"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" padding="around-small">
+                            <lightning-input-field field-name="Priority"></lightning-input-field>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="12" padding="around-small">
+                            <lightning-input-field field-name="Description"></lightning-input-field>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-record-edit-form>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-modal-body>
+</template>
