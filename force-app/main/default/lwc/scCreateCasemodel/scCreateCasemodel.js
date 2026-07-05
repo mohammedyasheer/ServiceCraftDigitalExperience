@@ -62,7 +62,7 @@ export default class ScCreateCasemodel extends LightningModal {
             }
         }).catch(error => {
             console.log(error);
-            Toast.show({
+            Toast.show({                                    
                 label: 'Error in creation',
                 message: 'Error in case creation',
                 varient: 'error',

@@ -4,5 +4,8 @@
             <lightning-button class="slds-align_absolute-center" variant="brand" label="New" name="newcase" icon-name="utility:new" icon-position="right" onclick={handleClick}>
             </lightning-button>
         </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small">
+            <c-sc-display-case cases={cases} onsccaseevent={handleEvent}></c-sc-display-case>
+        </lightning-layout-item>
     </lightning-layout>
 </template>
